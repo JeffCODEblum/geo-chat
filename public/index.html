@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" href="./css/bootstrap.min.css"></link>
+		<link rel="stylesheet" href="./css/custom.css"></link>
+		<link rel="stylesheet" href="https://js.arcgis.com/3.23/esri/css/esri.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="HandheldFriendly" content="true" />
+	</head>
+	
+	<body ng-app="MyApp" ng-controller="mainCtrl" style="background-color: #222;">
+		
+		<!--<div id="map" style="position: absolute; width: 100%; height: 100vh; left: 0; top: 0"></div>
+		<div style="overflow: hidden; width: 100%; height: 100vh;">
+				
+
+		</div>-->	
+
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12">
+					<div id="map" style="height: 100vh;"></div>
+					<div id="overlay" style="position: absolute; background-color: black; top: 0"></div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid" style="position: absolute; width: 100%; bottom: 0px;">
+			<div class="row">
+				<div class="col-md-3"></div>
+				<div class="col-md-6" style="background-color: rgba(0, 0, 0, 0.5); padding: 40px;">
+					<div class="form">
+						<div class="form-group">
+							<input class="form-control" type="text" ng-model="newPost.heading" placeholder="heading"></input>
+						</div>
+						<div class="form-group">
+							<textarea class="form-control" rows="6" type="text" ng-model="newPost.body" placeholder="body"></textarea>
+						</div>
+						<div class="form-group">
+							<input type="submit" class="btn btn-primary" style="float: right;" ng-click="post()"></input>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+		<script src="./js/angular.min.js"></script>
+		<script src="./js/jquery.js"></script>
+		<script src="./js/bootstrap.min.js"></script>		
+		<script src="https://js.arcgis.com/3.23/"></script>
+		<script src="./js/index.js"></script>
+	</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "meanApp",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express-session": "~1.11.3",
+    "express": "~4.13.3",
+    "mongoose": "~4.1.10",
+    "body-parser": "~1.14.1",
+    "socket.io": "*"
+  }
+}

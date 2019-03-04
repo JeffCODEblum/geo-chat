@@ -1,0 +1,11 @@
+.esriControlsBR {
+	visibility: hidden !important;
+}
+
+@media only screen and (max-width: 600px) {
+	#inputPanel {
+		position: absolute;
+		bottom: 0px;
+		width: 100%;
+	}
+}
